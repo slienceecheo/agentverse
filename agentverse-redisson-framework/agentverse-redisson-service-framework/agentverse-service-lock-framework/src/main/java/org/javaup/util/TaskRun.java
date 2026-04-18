@@ -1,0 +1,11 @@
+package org.javaup.util;
+
+/**
+ * @description: 分布式锁 方法类型执行 无返回值的业务
+ * @author: slienceecheo
+ **/
+@FunctionalInterface
+public interface TaskRun {
+
+    void run();
+}
