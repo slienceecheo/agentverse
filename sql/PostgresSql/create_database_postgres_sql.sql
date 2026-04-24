@@ -1,0 +1,1 @@
+CREATE DATABASE agentverse_pgvector WITH ENCODING 'UTF8';
