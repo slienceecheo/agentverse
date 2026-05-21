@@ -1,0 +1,17 @@
+package org.javaup.ai.chatagent.rag.retrieve.channel;
+
+import org.javaup.ai.chatagent.rag.model.ConversationExecutionPlan;
+
+/**
+ * @description: 检索通道抽象
+ * @author: slienceecheo
+ **/
+
+public interface RetrievalChannel {
+
+    String channelName();
+
+    boolean supports(ConversationExecutionPlan plan);
+
+    RetrievalChannelResult retrieve(String subQuestion, ConversationExecutionPlan plan);
+}
