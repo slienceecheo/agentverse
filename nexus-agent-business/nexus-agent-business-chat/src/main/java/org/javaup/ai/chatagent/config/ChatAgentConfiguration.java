@@ -11,7 +11,9 @@ import com.alibaba.cloud.ai.graph.checkpoint.savers.mysql.CreateOption;
 import com.alibaba.cloud.ai.graph.checkpoint.savers.mysql.MysqlSaver;
 import org.javaup.ai.chatagent.support.DashScopeCompatibilityInterceptor;
 import org.javaup.ai.chatagent.support.TavilyToolInputFallbackInterceptor;
+import org.javaup.ai.chatagent.tool.BochaSearchRequest;
 import org.javaup.ai.chatagent.tool.TavilySearchRequest;
+import org.javaup.ai.chatagent.tool.BochaSearchTool;
 import org.javaup.ai.chatagent.tool.TavilySearchTool;
 import org.springframework.ai.chat.model.ChatModel;
 import org.springframework.ai.tool.ToolCallback;
@@ -26,7 +28,7 @@ import org.springframework.context.annotation.Configuration;
  * @author: 阿星不是程序员
  **/
 @Configuration
-@EnableConfigurationProperties({ChatAgentProperties.class, TavilySearchProperties.class})
+@EnableConfigurationProperties({ChatAgentProperties.class, TavilySearchProperties.class, BochaSearchProperties.class})
 public class ChatAgentConfiguration {
 
     @Bean
@@ -35,6 +37,16 @@ public class ChatAgentConfiguration {
         return MysqlSaver.builder()
             .dataSource(dataSource)
             .createOption(CreateOption.CREATE_IF_NOT_EXISTS)
+            .build();
+    }
+
+    @Bean
+    public ToolCallback bochaSearchToolCallback(BochaSearchTool bochaSearchTool) {
+
+        return FunctionToolCallback
+            .builder("bocha_search", bochaSearchTool::search)
+            .description("使用博查搜索引擎联网搜索最新中文信息、事实资料和网页来源。调用时必须传 JSON 参数，且至少包含非空 query；可选 freshness（noLimit/oneDay/oneWeek/oneMonth/oneYear）和 maxResults。")
+            .inputType(BochaSearchRequest.class)
             .build();
     }
 
@@ -52,6 +64,7 @@ public class ChatAgentConfiguration {
     public ReactAgent businessChatReactAgent(ChatModel chatModel,
                                              MysqlSaver mysqlCheckpointSaver,
                                              ToolCallback tavilySearchToolCallback,
+                                             ToolCallback bochaSearchToolCallback,
                                              ChatAgentProperties chatAgentProperties,
                                              DashScopeCompatibilityInterceptor dashScopeCompatibilityInterceptor,
                                              TavilyToolInputFallbackInterceptor tavilyToolInputFallbackInterceptor) {
@@ -61,7 +74,7 @@ public class ChatAgentConfiguration {
             .model(chatModel)
             .instruction(chatAgentProperties.getSystemPrompt())
 
-            .tools(tavilySearchToolCallback)
+            .tools(tavilySearchToolCallback, bochaSearchToolCallback)
             .saver(mysqlCheckpointSaver)
 
             .parallelToolExecution(true)

@@ -217,6 +217,23 @@ app:
         # 单次精排后保留的前 N 个候选。
         top-n: 5
 
+
+  bocha:
+    # 是否启用博查联网搜索工具（中文场景可替代或补充 Tavily）。
+    enabled: true
+    # 博查 API 服务地址。
+    base-url: https://api.bochaai.com
+    # 博查 Web Search 接口路径。
+    search-path: /v1/web-search
+    # 博查 API Key，通过环境变量注入，未配置时请将 enabled 置为 false。
+    api-key: ${BOCHA_API_KEY}
+    # 搜索时间范围：noLimit / oneDay / oneWeek / oneMonth / oneYear。
+    freshness: noLimit
+    # 是否返回长文本摘要。
+    summary: true
+    # 单次搜索最多返回多少条候选结果。
+    max-results: 5
+
   tavily:
     # 是否启用 Tavily 联网搜索工具。
     # 关闭后，ReactAgent 即使判断需要搜索，也无法调用该工具。
