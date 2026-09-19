@@ -10,7 +10,7 @@
 
     <name>${project.artifactId}</name>
     
-    <description>nexus-agent</description>
+    <description>Multi-agent conversation platform based on Spring AI Alibaba Graph</description>
     
     <modules>
         <module>ai-example</module>
@@ -148,16 +148,16 @@
     </licenses>
 
     <scm>
-        <url>https://gitee.com/shining-stars-l/super-ai</url>
-        <connection>scm:git:git@gitee.com:shining-stars-l/super-ai.git</connection>
-        <developerConnection>scm:git:git@gitee.com:shining-stars-l/super-ai.git</developerConnection>
+        <url>https://github.com/slienceecheo/agentverse</url>
+        <connection>scm:git:git@github.com:slienceecheo/agentverse.git</connection>
+        <developerConnection>scm:git:git@github.com:slienceecheo/agentverse.git</developerConnection>
         <tag>v${project.version}</tag>
     </scm>
 
     <developers>
         <developer>
-            <name>阿星不是程序员</name>
-            <email>1031900093@qq.com</email>
+            <name>slienceecheo</name>
+            <email>y9854698@163.com</email>
         </developer>
     </developers>
 

@@ -14,8 +14,8 @@
     -->
     <aside class="admin-sidebar hidden min-h-dvh border-r border-admin-border lg:flex">
       <div class="flex h-14 flex-none items-center gap-2 border-b border-border px-3">
-        <div class="grid size-8 flex-none place-items-center rounded-md bg-primary text-caption font-bold text-primary-foreground">NA</div>
-        <strong v-if="!desktopCollapsed" class="min-w-0 flex-1 truncate text-body-sm font-semibold text-foreground">Nexus Agent</strong>
+        <div class="grid size-8 flex-none place-items-center rounded-md bg-primary text-caption font-bold text-primary-foreground">AV</div>
+        <strong v-if="!desktopCollapsed" class="min-w-0 flex-1 truncate text-body-sm font-semibold text-foreground">AgentVerse</strong>
         <Button
           variant="ghost"
           size="icon"
@@ -108,8 +108,8 @@
         </DrawerHeader>
         <aside class="flex min-h-0 flex-1 flex-col">
           <div class="flex h-14 flex-none items-center gap-2 border-b border-border px-4">
-            <div class="grid size-8 place-items-center rounded-md bg-primary text-caption font-bold text-primary-foreground">NA</div>
-            <strong class="text-body-sm font-semibold text-foreground">Nexus Agent</strong>
+            <div class="grid size-8 place-items-center rounded-md bg-primary text-caption font-bold text-primary-foreground">AV</div>
+            <strong class="text-body-sm font-semibold text-foreground">AgentVerse</strong>
           </div>
           <nav class="min-h-0 flex-1 overflow-y-auto px-3 py-4" aria-label="移动端后台导航">
             <section v-for="group in navGroups" :key="group.label" class="mb-5 last:mb-0">

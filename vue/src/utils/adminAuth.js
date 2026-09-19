@@ -1,5 +1,5 @@
-const ADMIN_TOKEN_KEY = 'super-agent-admin-token'
-const ADMIN_USER_KEY = 'super-agent-admin-user'
+const ADMIN_TOKEN_KEY = 'agentverse-admin-token'
+const ADMIN_USER_KEY = 'agentverse-admin-user'
 
 function decodeBase64Url(value) {
   const normalized = value.replace(/-/g, '+').replace(/_/g, '/')

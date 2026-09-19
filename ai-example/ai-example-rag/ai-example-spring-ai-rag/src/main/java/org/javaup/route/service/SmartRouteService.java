@@ -17,9 +17,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @program: 企业级别深度设计 AI Agent。添加 阿星不是程序员 微信，添加时备注 super 来获取项目的完整资料 
  * @description: 服务层
- * @author: 阿星不是程序员
+ * @author: slienceecheo
  **/
 /**
  * 示例版主服务。
@@ -172,7 +171,7 @@ public class SmartRouteService {
         }
         try {
             return chatClient.prompt()
-                .system("你是 JavaUp 的学习助手，闲聊时自然一点，不要突然展开长篇技术回答。")
+                .system("你是 AgentVerse 的学习助手，闲聊时自然一点，不要突然展开长篇技术回答。")
                 .user(user -> user.text("""
                     历史对话：
                     {history}

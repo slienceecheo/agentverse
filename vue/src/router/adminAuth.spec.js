@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, it } from 'vitest'
 import router from './index'
 
-const TOKEN_KEY = 'super-agent-admin-token'
+const TOKEN_KEY = 'agentverse-admin-token'
 
 function validToken() {
   const header = window.btoa(JSON.stringify({ alg: 'none', typ: 'JWT' }))

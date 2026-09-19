@@ -31,9 +31,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 /**
- * @program: 企业级别深度设计 AI Agent。添加 阿星不是程序员 微信，添加时备注 super 来获取项目的完整资料 
  * @description: 服务层
- * @author: 阿星不是程序员
+ * @author: slienceecheo
  **/
 @Service
 public class SpringAiAlibabaAgentService {
@@ -41,13 +40,13 @@ public class SpringAiAlibabaAgentService {
     private static final String DEFAULT_SESSION_ID = "demo-user-1001";
 
     private static final String SIMPLE_AGENT_PROMPT = """
-        你是 JavaUp 的 Spring AI Alibaba 入门助手。
+        你是 AgentVerse 的 Spring AI Alibaba 入门助手。
         你的任务是用简洁、结构化的方式回答用户关于 ReactAgent、Tool、Memory 和 Hook 的问题。
         如果用户没有给出上下文，优先给出可以马上动手验证的建议。
         """;
 
     private static final String ORDER_ASSISTANT_PROMPT = """
-        你是 JavaUp 电商订单助手，需要结合工具结果回答问题。
+        你是 AgentVerse 电商订单助手，需要结合工具结果回答问题。
         你可以：
         1. 查询订单状态和物流信息。
         2. 查询商品详情和售后规则。

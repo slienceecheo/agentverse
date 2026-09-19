@@ -23,7 +23,7 @@ public class AdminAuthProperties {
     /**
      * JWT 签名密钥。
      */
-    private String tokenSecret = "super-agent-admin-token-secret-change-me";
+    private String tokenSecret = "agentverse-admin-token-secret-change-me";
 
     /**
      * token 有效期，单位分钟。

@@ -1,5 +1,5 @@
-const ADMIN_TOKEN_KEY = 'nexus-agent-admin-token'
-const ADMIN_USER_KEY = 'nexus-agent-admin-user'
+const ADMIN_TOKEN_KEY = 'agentverse-admin-token'
+const ADMIN_USER_KEY = 'agentverse-admin-user'
 
 const fixtureExchange = {
   exchangeId: '90071992547409931234',

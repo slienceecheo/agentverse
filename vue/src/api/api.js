@@ -1,7 +1,7 @@
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || ''
 const REQUEST_TIMEOUT = 30000
-const ADMIN_TOKEN_KEY = 'super-agent-admin-token'
-const ADMIN_USER_KEY = 'super-agent-admin-user'
+const ADMIN_TOKEN_KEY = 'agentverse-admin-token'
+const ADMIN_USER_KEY = 'agentverse-admin-user'
 
 export class APIError extends Error {
   constructor(message, status, cause) {

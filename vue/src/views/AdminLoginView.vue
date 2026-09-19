@@ -2,9 +2,9 @@
   <div class="relative grid min-h-dvh place-items-center bg-admin-bg px-4 py-16 sm:px-6">
     <main class="w-full max-w-[440px]">
       <div class="mb-5 flex items-center gap-3 px-1">
-        <div class="grid size-9 place-items-center rounded-md bg-primary text-caption font-bold text-primary-foreground">NA</div>
+        <div class="grid size-9 place-items-center rounded-md bg-primary text-caption font-bold text-primary-foreground">AV</div>
         <div>
-          <p class="m-0 text-caption text-muted-foreground">Nexus Agent</p>
+          <p class="m-0 text-caption text-muted-foreground">AgentVerse</p>
           <h1 class="m-0 text-title-sm font-semibold text-foreground">管理后台</h1>
         </div>
       </div>

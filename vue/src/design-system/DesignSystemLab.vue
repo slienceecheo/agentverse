@@ -62,7 +62,7 @@ const graphSwatches = Array.from({ length: 8 }, (_, index) => [
   <main class="min-h-screen bg-background text-foreground">
     <div class="mx-auto w-full max-w-[1440px] px-4 py-6 sm:px-6 lg:px-8">
       <PageHeader
-        title="Nexus Agent Pro 设计系统实验台"
+        title="AgentVerse 设计系统实验台"
         description="当前生产 Token、基础组件和居中子页面弹窗合同。"
       >
         <template #actions>
