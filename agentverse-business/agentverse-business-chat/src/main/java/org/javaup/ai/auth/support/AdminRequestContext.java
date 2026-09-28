@@ -7,7 +7,7 @@ import jakarta.servlet.http.HttpServletRequest;
  */
 public final class AdminRequestContext {
 
-    public static final String ADMIN_USERNAME_ATTRIBUTE = "super.agent.admin.username";
+    public static final String ADMIN_USERNAME_ATTRIBUTE = "agentverse.admin.username";
 
     private AdminRequestContext() {
     }

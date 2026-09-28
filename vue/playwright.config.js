@@ -1,7 +1,7 @@
 import { defineConfig } from '@playwright/test'
 import { resolve } from 'node:path'
 
-const evidenceRoot = resolve(process.cwd(), process.env.NEXUS_PLAYWRIGHT_EVIDENCE_DIR || 'test-results/f09')
+const evidenceRoot = resolve(process.cwd(), process.env.AGENTVERSE_PLAYWRIGHT_EVIDENCE_DIR || 'test-results/f09')
 
 export default defineConfig({
   testDir: './e2e',

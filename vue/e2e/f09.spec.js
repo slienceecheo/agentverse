@@ -4,7 +4,7 @@ import { mkdir, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { installMockApp, setAdminAuthenticated } from './fixtures/mockApp.js'
 
-const evidenceRoot = resolve(process.cwd(), process.env.NEXUS_PLAYWRIGHT_EVIDENCE_DIR || 'test-results/f09')
+const evidenceRoot = resolve(process.cwd(), process.env.AGENTVERSE_PLAYWRIGHT_EVIDENCE_DIR || 'test-results/f09')
 
 const routes = [
   { key: 'chat', path: '/chat', admin: false },

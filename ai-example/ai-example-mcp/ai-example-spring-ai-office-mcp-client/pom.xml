@@ -53,7 +53,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.boot.version}</version>
                 <configuration>
-                    <mainClass>org.javaup.ai.NexusBusinessChatAgentApplication</mainClass>
+                    <mainClass>org.javaup.ai.ExampleSpringAiOfficeMcpClientApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

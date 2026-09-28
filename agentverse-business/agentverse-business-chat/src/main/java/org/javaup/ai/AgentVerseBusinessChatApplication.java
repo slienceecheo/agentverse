@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author: slienceecheo
  **/
 @SpringBootApplication
-public class NexusBusinessChatAgentApplication {
+public class AgentVerseBusinessChatApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(NexusBusinessChatAgentApplication.class, args);
+        SpringApplication.run(AgentVerseBusinessChatApplication.class, args);
     }
 
 }
