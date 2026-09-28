@@ -139,7 +139,7 @@ cd agentverse
 mvn clean install -DskipTests
 
 # 启动应用
-cd nexus-agent-business/nexus-agent-business-chat
+cd agentverse-business/agentverse-business-chat
 mvn spring-boot:run
 ```
 
@@ -163,7 +163,7 @@ npm run build
 复制并修改配置文件：
 
 ```bash
-cd nexus-agent-business/nexus-agent-business-chat/src/main/resources
+cd agentverse-business/agentverse-business-chat/src/main/resources
 cp application.yaml.example application.yaml
 ```
 
@@ -178,11 +178,11 @@ cp application.yaml.example application.yaml
 
 | 模块 | 说明 |
 |------|------|
-| `nexus-agent-business` | 核心业务逻辑，包括对话智能体、文档管理 |
-| `nexus-agent-common` | 通用工具、Web 框架、数据库辅助 |
-| `nexus-agent-id-generator-framework` | 分布式 ID 生成框架 |
-| `nexus-agent-redis-tool-framework` | Redis 缓存和工具框架 |
-| `nexus-agent-redisson-framework` | 分布式锁、租约和延迟队列框架 |
+| `agentverse-business` | 核心业务逻辑，包括对话智能体、文档管理 |
+| `agentverse-common` | 通用工具、Web 框架、数据库辅助 |
+| `agentverse-id-generator-framework` | 分布式 ID 生成框架 |
+| `agentverse-redis-tool-framework` | Redis 缓存和工具框架 |
+| `agentverse-redisson-framework` | 分布式锁、租约和延迟队列框架 |
 | `ai-example` | Spring AI 示例项目 |
 | `vue` | 基于 Vue 3 的前端应用 |
 

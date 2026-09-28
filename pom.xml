@@ -4,7 +4,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.javaup</groupId>
-    <artifactId>nexus-agent</artifactId>
+    <artifactId>agentverse</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
 
@@ -14,11 +14,11 @@
     
     <modules>
         <module>ai-example</module>
-        <module>nexus-agent-business</module>
-        <module>nexus-agent-common</module>
-        <module>nexus-agent-id-generator-framework</module>
-        <module>nexus-agent-redisson-framework</module>
-        <module>nexus-agent-redis-tool-framework</module>
+        <module>agentverse-business</module>
+        <module>agentverse-common</module>
+        <module>agentverse-id-generator-framework</module>
+        <module>agentverse-redisson-framework</module>
+        <module>agentverse-redis-tool-framework</module>
     </modules>
     
     <properties>
